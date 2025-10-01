@@ -24,7 +24,7 @@ jobs:
           mkdir -p dist staging
 
           VERSION="${{ steps.version.outputs.version }}"
-          BASENAME="vpLRS_weapons_IzP_LBDR compat patch"
+          BASENAME="vpIZY_weapons_IzP_LBDR compat patch"
           ZIP_NAME="$BASENAME-v${VERSION}.zip"
 
           # Export repo into staging dir (skipping .git and .github)
