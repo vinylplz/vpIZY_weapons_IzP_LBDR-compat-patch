@@ -1,0 +1,121 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_9mmVAL ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+
+    <!-- ================ Tier 0 ==============================
+    IZYgunT0SMGPIPEsubmachinegun        : gunHandgunT0PipePistol 
+    -->
+    <!-- These are always unlocked.  See also recipes.xml -->
+    <remove xpath ="items/item[@name='IZYgunT0SMGPIPEsubmachinegun']/property[@name='UnlockedBy']"/>
+
+
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1DualPistolCOLTnavyRevolver  : gunHandgunT1Pistol
+    IZYgunT1Pistol9Makarov              : gunHandgunT1Pistol
+    IZYgunT1SMGTec9submachinegun        : gunHandgunT1Pistol 
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT1DualPistolCOLTnavyRevolver']/property[@name='UnlockedBy']" name="value">gunHandgunT1PistolSchematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT1Pistol9Makarov']/property[@name='UnlockedBy']" name="value">gunHandgunT1PistolSchematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT1SMGTec9submachinegun']/property[@name='UnlockedBy']" name="value">gunHandgunT1PistolSchematic,perkPistolCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunHandgunT1PistolSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1DualPistolCOLTnavyRevolver" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1Pistol9Makarov" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1SMGTec9submachinegun" operation="set" value="1"/>
+    </append>
+
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2ClassicSMGMP34              : gunHandgunT2Magnum44  (Notready_ICON)
+    IZYgunT2DualPistolM9bs              : gunHandgunT2Magnum44
+    IZYgunT2SMGUZIsubmachinegun         : gunHandgunT2Magnum44 
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT2ClassicSMGMP34']/property[@name='UnlockedBy']" name="value">gunHandgunT2Magnum44Schematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT2DualPistolM9bs']/property[@name='UnlockedBy']" name="value">gunHandgunT2Magnum44Schematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT2SMGUZIsubmachinegun']/property[@name='UnlockedBy']" name="value">gunHandgunT2Magnum44Schematic,perkPistolCrafting</setattribute>
+ 
+     <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunHandgunT2Magnum44Schematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2ClassicSMGMP34" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2DualPistolM9bs" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2SMGUZIsubmachinegun" operation="set" value="1"/>
+    </append>
+ 
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3DualPistolGlock18C          : gunHandgunT3SMG5
+    IZYgunT3SMGMP5Ksubmachinegun        : gunHandgunT3SMG5  (Notready_ICON)
+    IZYgunT3SMGMP9submachinegun         : gunHandgunT3SMG5 
+    -->
+     <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT3DualPistolGlock18C']/property[@name='UnlockedBy']" name="value">gunHandgunT3SMG5Schematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3SMGMP5Ksubmachinegun']/property[@name='UnlockedBy']" name="value">gunHandgunT3SMG5Schematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3SMGMP9submachinegun']/property[@name='UnlockedBy']" name="value">gunHandgunT3SMG5Schematic,perkPistolCrafting</setattribute>
+
+     <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunHandgunT3SMG5Schematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3DualPistolGlock18C" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3SMGMP5Ksubmachinegun" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3SMGMP9submachinegun" operation="set" value="1"/>
+    </append>
+
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4DualPistolC96M              : -                 (Notready_ICON)
+    IZYgunT4DualPistolMP9s              : -
+    IZYgunT4SMGCZScorpionEVO3           : -
+    IZYgunT4SMGColt9mmsubmachinegun     : -                 (Notready_ICON)
+    -->
+    <!-- Set the UnlockedBy attribute to Schematic only -->
+    <setattribute xpath="items/item[@name='IZYgunT4DualPistolC96M']/property[@name='UnlockedBy']" name="value">IZYgunT4DualPistolC96MSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4DualPistolMP9s']/property[@name='UnlockedBy']" name="value">IZYgunT4DualPistolMP9sSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4SMGCZScorpionEVO3']/property[@name='UnlockedBy']" name="value">IZYgunT4SMGCZScorpionEVO3Schematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4SMGColt9mmsubmachinegun']/property[@name='UnlockedBy']" name="value">IZYgunT4SMGColt9mmsubmachinegunSchematic</setattribute>
+
+    <!-- create new schematics -->
+    <append xpath="/items">	
+        <item name="IZYgunT4DualPistolC96MSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="Notready_ICON"/>
+            <property name="Unlocks" value="IZYgunT4DualPistolC96M"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4DualPistolC96M" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4DualPistolMP9sSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4DualPistolMP9s"/>
+            <property name="Unlocks" value="IZYgunT4DualPistolMP9s"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4DualPistolMP9s" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4SMGCZScorpionEVO3Schematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4SMGCZScorpionEVO3"/>
+            <property name="Unlocks" value="IZYgunT4SMGCZScorpionEVO3"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4SMGCZScorpionEVO3" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4SMGColt9mmsubmachinegunSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="Notready_ICON"/>
+            <property name="Unlocks" value="IZYgunT4SMGColt9mmsubmachinegun"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4SMGColt9mmsubmachinegun" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+</vinylplz>

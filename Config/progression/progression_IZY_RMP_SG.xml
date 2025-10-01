@@ -1,0 +1,41 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_SG ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1TACCompactshotgunSuperShortty       : gunShotgunT1DoubleBarrel
+    IZYgunT1TradshotgunDoubleBarrelOverUnder    : gunShotgunT1DoubleBarrel
+    -->
+    <!-- The following line adds the T1 IZY Shotguns to any perks that gunShotgunT1DoubleBarrel (vanilla) is in, namely:		
+            * perkGunsmithCrafting: enables crafting higher quality guns
+            * perkShotgunCrafting: unlocks crafting shotguns
+        The rest of the file follows the same pattern.
+    -->
+   <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunShotgunT1DoubleBarrel')]/@tags" op="Add">IZYgunT1TACCompactshotgunSuperShortty,IZYgunT1TradshotgunDoubleBarrelOverUnder</csv>
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2TradshotgunLeveractionShotgunModel1887  : gunShotgunT2PumpShotgun
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunShotgunT2PumpShotgun')]/@tags" op="Add">IZYgunT2TradshotgunLeveractionShotgunModel1887</csv>
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3TACshotgunSPAS12G           : gunShotgunT3AutoShotgun  
+    IZYgunT3TradshotgunTrenchGunM1897   : gunShotgunT3AutoShotgun
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunShotgunT3AutoShotgun')]/@tags" op="Add">IZYgunT3TACshotgunSPAS12G,IZYgunT3TradshotgunTrenchGunM1897</csv>
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4TACshotgunM1014            : -                   (Notready_ICON)
+    IZYgunT4TradshotgunBrowningAuto5   : -
+    -->
+    <!-- T4 weapons are only unlocked from Schematics, but still need to be added to perkGunsmithCrafting to enabled higher-quality crafting -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT0PipePistol')]/@tags" op="Add">IZYgunT4TACshotgunM1014,IZYgunT4TradshotgunBrowningAuto5</csv>
+
+    <!-- ================ Ammo ========================== 
+    ammoShotgunShellDragoBreath     : ammoShotgunSlug
+    ammoShotgunShellPremium         : ammoShotgunShell
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammoShotgunSlug')]/@tags" op="Add">ammoShotgunShellDragoBreath</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammoShotgunShell')]/@tags" op="Add">ammoShotgunShellPremium</csv>
+
+</vinylplz>

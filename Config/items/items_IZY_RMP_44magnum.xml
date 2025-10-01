@@ -1,0 +1,39 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_44magnum ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3PistolMagnumAutomag44            : gunHandgunT3DesertVulture
+    IZYgunT3RifleMagnumLeveractionCarbine44  : gunHandgunT3DesertVulture  (Notready_ICON)
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT3PistolMagnumAutomag44']/property[@name='UnlockedBy']" name="value">gunHandgunT3DesertVultureSchematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3RifleMagnumLeveractionCarbine44']/property[@name='UnlockedBy']" name="value">gunHandgunT3DesertVultureSchematic,perkPistolCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunHandgunT3DesertVultureSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3PistolMagnumAutomag44" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3RifleMagnumLeveractionCarbine44" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4DualMagnumDesertEagles   : -                   
+    -->
+    <!-- Set the UnlockedBy attribute to Schematic only -->
+    <setattribute xpath="items/item[@name='IZYgunT4DualMagnumDesertEagles']/property[@name='UnlockedBy']" name="value">gunHandgunT4DualDesertEaglesSchematic</setattribute>
+
+    <!-- create new schematics -->
+    <append xpath="/items">
+        <item name="IZYgunT4DualMagnumDesertEaglesSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4DualMagnumDesertEagles"/>
+            <property name="Unlocks" value="IZYgunT4DualMagnumDesertEagles"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4DualMagnumDesertEagles" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+
+</vinylplz>
