@@ -17,6 +17,9 @@ runs:
             for f in files:
                 if f.endswith(".xml"):
                     path = os.path.join(root, f)
+                    # Skip empty XML files
+                    if os.path.getsize(path) == 0:
+                        continue
                     try:
                         ET.parse(path)
                     except ET.ParseError as e:
