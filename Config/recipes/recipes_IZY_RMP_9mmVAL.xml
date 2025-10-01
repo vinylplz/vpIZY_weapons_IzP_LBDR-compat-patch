@@ -1,0 +1,37 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_9mmVAL ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 0 ==============================
+    IZYgunT0SMGPIPEsubmachinegun        : gunHandgunT0PipePistol 
+    -->
+    <!-- T0 guns are unlocked by default -->
+    <!--  removes "learnable" tag -->
+    <setattribute xpath = "recipes/recipe[@name='IZYgunT0SMGPIPEsubmachinegun']" name="tags">perkGunslinger</setattribute>
+
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1DualPistolCOLTnavyRevolver  : gunHandgunT1Pistol
+    IZYgunT1Pistol9Makarov              : gunHandgunT1Pistol
+    IZYgunT1SMGTec9submachinegun        : gunHandgunT1Pistol 
+    -->
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2ClassicSMGMP34              : gunHandgunT2Magnum44  (Notready_ICON)
+    IZYgunT2DualPistolM9bs              : gunHandgunT2Magnum44
+    IZYgunT2SMGUZIsubmachinegun         : gunHandgunT2Magnum44 
+    -->
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3DualPistolGlock18C          : gunHandgunT3SMG5
+    IZYgunT3SMGMP5Ksubmachinegun        : gunHandgunT3SMG5  (Notready_ICON)
+    IZYgunT3SMGMP9submachinegun         : gunHandgunT3SMG5 
+    -->
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4DualPistolC96M              : -                 (Notready_ICON)
+    IZYgunT4DualPistolMP9s              : -
+    IZYgunT4SMGCZScorpionEVO3           : -
+    IZYgunT4SMGColt9mmsubmachinegun     : -                 (Notready_ICON)
+    -->
+
+</vinylplz>
