@@ -1,0 +1,99 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_SG ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1TACCompactshotgunSuperShortty       : gunShotgunT1DoubleBarrel
+    IZYgunT1TradshotgunDoubleBarrelOverUnder    : gunShotgunT1DoubleBarrel
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT1TACCompactshotgunSuperShortty']/property[@name='UnlockedBy']" name="value">gunShotgunT1DoubleBarrelSchematic,perkShotgunCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT1TradshotgunDoubleBarrelOverUnder']/property[@name='UnlockedBy']" name="value">gunShotgunT1DoubleBarrelSchematic,perkShotgunCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunShotgunT1DoubleBarrelSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1TACCompactshotgunSuperShortty" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1TradshotgunDoubleBarrelOverUnder" operation="set" value="1"/>
+    </append>
+
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2TradshotgunLeveractionShotgunModel1887  : gunShotgunT2PumpShotgun
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT2TradshotgunLeveractionShotgunModel1887']/property[@name='UnlockedBy']" name="value">gunShotgunT2PumpShotgunSchematic,perkShotgunCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunShotgunT2PumpShotgunSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2TradshotgunLeveractionShotgunModel1887" operation="set" value="1"/>
+    </append>
+
+
+    <!-- ================ Tier 3 =========================
+    IZYgunT3TACshotgunSPAS12G           : gunShotgunT3AutoShotgun
+    IZYgunT3TradshotgunTrenchGunM1897   : gunShotgunT3AutoShotgun
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT3TACshotgunSPAS12G']/property[@name='UnlockedBy']" name="value">gunShotgunT3AutoShotgunSchematic,perkShotgunCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3TradshotgunTrenchGunM1897']/property[@name='UnlockedBy']" name="value">gunShotgunT3AutoShotgunSchematic,perkShotgunCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunShotgunT3AutoShotgunSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3TACshotgunSPAS12G" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3TradshotgunTrenchGunM1897" operation="set" value="1"/>
+    </append>
+
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4TACshotgunM1014            : -                   (Notready_ICON)
+    IZYgunT4TradshotgunBrowningAuto5   : -
+    -->
+    <!-- Set the UnlockedBy attribute to Schematic only -->
+    <setattribute xpath="items/item[@name='IZYgunT4TACshotgunM1014']/property[@name='UnlockedBy']" name="value">IZYgunT4TACshotgunM1014Schematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4TradshotgunBrowningAuto5']/property[@name='UnlockedBy']" name="value">IZYgunT4TradshotgunBrowningAuto5Schematic</setattribute>
+
+    <!-- create new schematics -->
+    <append xpath="/items">	
+        <item name="IZYgunT4TACshotgunM1014Schematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="Notready_ICON"/>
+            <property name="Unlocks" value="IZYgunT4TACshotgunM1014"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4TACshotgunM1014" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4TradshotgunBrowningAuto5Schematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4TradshotgunBrowningAuto5"/>
+            <property name="Unlocks" value="IZYgunT4TradshotgunBrowningAuto5"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4TradshotgunBrowningAuto5" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+
+    <!-- ================ Ammo ========================== 
+    ammoShotgunShellDragoBreath     : ammoShotgunSlug
+    ammoShotgunShellPremium         : ammoShotgunShell
+    -->
+    <!-- ammo does not have an "UnlockedBy" property, so we must add one manually -->
+    <append xpath="items/item[@name='ammoShotgunShellDragoBreath']">
+        <property name="UnlockedBy" value="ammoShotgunSlugSchematic,perkShellCrafting"/>
+    </append>
+    <append xpath="items/item[@name='ammoShotgunShellPremium']">
+        <property name="UnlockedBy" value="ammoShotgunShellSchematic,perkShellCrafting"/>
+    </append>
+    
+    <!-- Update the related vanilla Schematics to unlock the IZY ammo -->
+    <append xpath="/items/item[@name='ammoShotgunSlugSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoShotgunShellDragoBreath" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='ammoShotgunShellSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoShotgunShellPremium" operation="set" value="1"/>
+    </append>	
+
+</vinylplz>

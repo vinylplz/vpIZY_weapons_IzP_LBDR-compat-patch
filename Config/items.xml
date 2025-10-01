@@ -1,0 +1,89 @@
+<vinylplz>
+	<conditional>
+	<if cond="mod_loaded('IzPLearnByDoing')">
+		<conditional>
+		<if cond="mod_loaded('IZY_FPV_GLOVES')">
+			<include filename="items/items_IZY_FPV_GLOVES.xml"/>	
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_MMVMV2')">
+			<include filename="items/items_IZY_MMVMV2.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_Miscpack')">
+			<include filename="items/items_IZY_RMP_Miscpack.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_44magnum')">
+			<include filename="items/items_IZY_RMP_44magnum.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_45ACP')">
+			<include filename="items/items_IZY_RMP_45ACP.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_556pack')">
+			<include filename="items/items_IZY_RMP_556pack.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_762pack')">
+			<include filename="items/items_IZY_RMP_762pack.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_9mmVAL')">
+			<include filename="items/items_IZY_RMP_9mmVAL.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_Demopack')">
+			<include filename="items/items_IZY_RMP_Demopack.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_HVW')">
+			<include filename="items/items_IZY_RMP_HVW.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_SG')">
+			<include filename="items/items_IZY_RMP_SG.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_RMP_Tech')">
+			<include filename="items/items_IZY_RMP_Tech.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_melee')">
+			<include filename="items/items_IZY_melee.xml"/>
+		</if>
+		</conditional>
+
+		<conditional>
+		<if cond="mod_loaded('IZY_VRP')">
+			<include filename="items/items_IZY_VRP.xml"/>
+		</if>
+		</conditional>
+	</if>
+	</conditional>
+</vinylplz>

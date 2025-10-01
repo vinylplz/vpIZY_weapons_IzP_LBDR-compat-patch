@@ -1,0 +1,32 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_SG ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1TACCompactshotgunSuperShortty       : gunShotgunT1DoubleBarrel
+    IZYgunT1TradshotgunDoubleBarrelOverUnder    : gunShotgunT1DoubleBarrel
+    -->
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2TradshotgunLeveractionShotgunModel1887  : gunShotgunT2PumpShotgun
+    -->
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3TACshotgunSPAS12G           : gunShotgunT3AutoShotgun  
+    IZYgunT3TradshotgunTrenchGunM1897   : gunShotgunT3AutoShotgun
+    -->
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4TACshotgunM1014            : -                   (Notready_ICON)
+    IZYgunT4TradshotgunBrowningAuto5   : -
+    -->
+
+    <!-- ================ Ammo ========================== 
+    ammoShotgunShellDragoBreath     : ammoShotgunSlug
+    ammoShotgunShellPremium         : ammoShotgunShell
+    -->
+    <!-- add the "learnable" tag to ammo to make it NOT craftable by default -->
+    <csv xpath = "recipes/recipe[@name='ammoShotgunShellDragoBreath']/@tags" op="Add">learnable</csv>
+    <csv xpath = "recipes/recipe[@name='ammoShotgunShellPremium']/@tags" op="Add">learnable</csv>
+
+</vinylplz>

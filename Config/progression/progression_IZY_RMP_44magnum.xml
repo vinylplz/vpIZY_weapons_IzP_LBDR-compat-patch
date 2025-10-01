@@ -1,0 +1,23 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_44magnum ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3PistolMagnumAutomag44            : gunHandgunT3DesertVulture
+    IZYgunT3RifleMagnumLeveractionCarbine44  : gunHandgunT3DesertVulture  (Notready_ICON)
+    -->
+    <!-- The following line adds the T3 IZY Magnums to any perks that gunHandgunT3DesertVulture (vanilla) is in, namely:		
+            * perkGunsmithCrafting: enables crafting higher quality guns
+            * perkPistolCrafting: unlocks crafting pistols
+        The rest of the file follows the same pattern.
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT3DesertVulture')]/@tags" op="Add">IZYgunT3PistolMagnumAutomag44,IZYgunT3RifleMagnumLeveractionCarbine44</csv>
+
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4DualMagnumDesertEagles   : -                   
+    -->
+    <!-- T4 weapons are only unlocked from Schematics, but still need to be added to perkGunsmithCrafting to enabled higher-quality crafting -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT0PipePistol')]/@tags" op="Add">IZYgunT4DualMagnumDesertEagles</csv>
+
+</vinylplz>
