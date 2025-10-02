@@ -5,8 +5,6 @@
     <!-- ================ Tier 0 ==============================
     IZYgunT0SMGPIPEsubmachinegun        : gunHandgunT0PipePistol 
     -->
-    <!-- T0 guns are unlocked by default -->
-    <!--  removes "learnable" tag -->
 
     <!-- ================ Tier 1 =========================== 
     IZYgunT1DualPistolCOLTnavyRevolver  : gunHandgunT1Pistol
