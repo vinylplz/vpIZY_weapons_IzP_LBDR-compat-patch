@@ -20,7 +20,7 @@
     IZYgunT4DualMagnumDesertEagles   : -                   
     -->
     <!-- Set the UnlockedBy attribute to Schematic only -->
-    <setattribute xpath="items/item[@name='IZYgunT4DualMagnumDesertEagles']/property[@name='UnlockedBy']" name="value">gunHandgunT4DualDesertEaglesSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4DualMagnumDesertEagles']/property[@name='UnlockedBy']" name="value">IZYgunT4DualMagnumDesertEaglesSchematic</setattribute>
 
     <!-- create new schematics -->
     <append xpath="/items">
