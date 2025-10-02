@@ -1,0 +1,76 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_45ACP =======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 0 ==============================
+    IZYgunT0PistolLiberatorImprovisedPistol : gunHandgunT0PipePistol 
+    -->
+    <!-- T0 weapons are always unlocked, but still need to be added to perkGunsmithCrafting to enabled higher-quality crafting -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT0PipePistol')]/@tags" op="Add">IZYgunT0PistolLiberatorImprovisedPistol</csv>
+
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT145TACSMGMAC10       : gunHandgunT1Pistol
+    IZYgunT1Pistol45M1917       : gunHandgunT1Pistol
+    IZYgunT1Pistol45Type17C96   : gunHandgunT1Pistol
+    -->
+    <!-- The following line adds the T1 IZY Pistols to any perks that gunHandgunT1Pistol (vanilla) is in, namely:		
+            * perkGunsmithCrafting: enables crafting higher quality guns
+            * perkPistolCrafting: unlocks crafting pistols
+        The rest of the file follows the same pattern.
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT1Pistol')]/@tags" op="Add">IZYgunT145TACSMGMAC10,IZYgunT1Pistol45M1917,IZYgunT1Pistol45Type17C96</csv>
+
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT245SMGM3Greasegun        : gunHandgunT2Magnum44
+    IZYgunT2DualPistols45M1911A1    : gunHandgunT2Magnum44
+    IZYgunT2Pistol45M1911A1         : gunHandgunT2Magnum44
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT2Magnum44')]/@tags" op="Add">IZYgunT245SMGM3Greasegun,IZYgunT2DualPistols45M1911A1,IZYgunT2Pistol45M1911A1</csv>
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT345SMGM1thompson             : gunHandgunT3SMG5
+    IZYgunT3DualPistols45USP45          : gunHandgunT3DesertVulture (Notready_ICON)
+    IZYgunT3MarksmanRifleMMRM1Carbine45 : gunRifleT3SniperRifle
+    IZYgunT3Pistol45USP45               : gunHandgunT3DesertVulture
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT3SMG5')]/@tags" op="Add">IZYgunT345SMGM1thompson</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT3DesertVulture')]/@tags" op="Add">IZYgunT3DualPistols45USP45</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunRifleT3SniperRifle')]/@tags" op="Add">IZYgunT3MarksmanRifleMMRM1Carbine45</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunHandgunT3DesertVulture')]/@tags" op="Add">IZYgunT3Pistol45USP45</csv>
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT445SMGM1928thompson          : (smg)
+    IZYgunT445TACSMGKrissSuperV         : (smg)
+    IZYgunT4MarksmanRifle45MMRKrissVectorCarbine   : (rifle)
+    IZYgunT4Pistol45STIEAGLE6           : (pistol)
+    -->
+    <!-- T4 weapons are only unlocked from Schematics, but still need to be added to perkGunsmithCrafting to enabled higher-quality crafting -->
+    <csv xpath="/progression/perks/perk[@name='perkGunsmithCrafting']/effect_group/passive_effect[@name='CraftingTier']/@tags" op="Add">IZYgunT445SMGM1928thompson,IZYgunT445TACSMGKrissSuperV,IZYgunT4MarksmanRifle45MMRKrissVectorCarbine,IZYgunT4Pistol45STIEAGLE6</csv>
+
+    
+    <!-- ================ Tier 5 ======================== 
+    IZYgunT5DualSMGsSuperVectors        : (Notready_ICON)
+    -->
+    <csv xpath="/progression/perks/perk[@name='perkGunsmithCrafting']/effect_group/passive_effect[@name='CraftingTier']/@tags" op="Add">IZYgunT5DualSMGsSuperVectors</csv>
+
+    <!-- ================ Ammo ========================== 
+    ammo45ACPBulletBall         : ammo9mmBulletBall
+    ammo45ACPHighpower          : ammo9mmBulletHP
+    ammo45ACPArmorpiecing       : ammo9mmBulletAP
+    ammo45ACPEnhanced           : - 
+    ammoBundle45ACPBulletBall   : ammoBundle9mmBulletBall
+    ammoBundle45ACPHighpower    : ammoBundle9mmBulletHP
+    ammoBundle45ACPArmorpiecing : ammoBundle9mmBulletAP
+    ammoBundle45ACPEnhanced     : - 
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammo9mmBulletBall')]/@tags" op="Add">ammo45ACPBulletBall</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammo9mmBulletHP')]/@tags" op="Add">ammo45ACPHighpower</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammo9mmBulletAP')]/@tags" op="Add">ammo45ACPArmorpiecing</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammo9mmBulletAP')]/@tags" op="Add">ammo45ACPEnhanced</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammoBundle9mmBulletBall')]/@tags" op="Add">ammoBundle45ACPBulletBall</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammoBundle9mmBulletHP')]/@tags" op="Add">ammoBundle45ACPHighpower</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammoBundle9mmBulletAP')]/@tags" op="Add">ammoBundle45ACPArmorpiecing</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammoBundle9mmBulletAP')]/@tags" op="Add">ammoBundle45ACPEnhanced</csv>
+    
+</vinylplz>

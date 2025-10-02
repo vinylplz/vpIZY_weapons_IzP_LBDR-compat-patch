@@ -1,0 +1,58 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_45ACP =======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 0 ==============================
+    IZYgunT0PistolLiberatorImprovisedPistol : gunHandgunT0PipePistol 
+    -->
+    <!-- T0 guns are unlocked by default -->
+    <!--  removes "learnable" tag -->
+    <setattribute xpath = "recipes/recipe[@name='IZYgunT0PistolLiberatorImprovisedPistol']" name="tags">perkGunslinger</setattribute>
+
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT145TACSMGMAC10       : gunHandgunT1Pistol
+    IZYgunT1Pistol45M1917       : gunHandgunT1Pistol
+    IZYgunT1Pistol45Type17C96   : gunHandgunT1Pistol
+    -->
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT245SMGM3Greasegun        : gunHandgunT2Magnum44
+    IZYgunT2DualPistols45M1911A1    : gunHandgunT2Magnum44
+    IZYgunT2Pistol45M1911A1         : gunHandgunT2Magnum44
+    -->
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT345SMGM1thompson             : gunHandgunT3SMG5
+    IZYgunT3DualPistols45USP45          : gunHandgunT3DesertVulture (Notready_ICON)
+    IZYgunT3MarksmanRifleMMRM1Carbine45 : gunRifleT3SniperRifle
+    IZYgunT3Pistol45USP45               : gunHandgunT3DesertVulture
+    -->
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT445SMGM1928thompson          : (smg)
+    IZYgunT445TACSMGKrissSuperV         : (smg)
+    IZYgunT4MarksmanRifle45MMRKrissVectorCarbine   : (rifle)
+    IZYgunT4Pistol45STIEAGLE6           : (pistol)
+    -->
+    
+    <!-- ================ Tier 5 ======================== 
+    IZYgunT5DualSMGsSuperVectors        : (Notready_ICON)
+    -->
+
+    <!-- ================ Ammo ========================== 
+    ammo45ACPBulletBall         : ammo9mmBulletBall
+    ammo45ACPHighpower          : ammo9mmBulletHP
+    ammo45ACPArmorpiecing       : ammo9mmBulletAP
+    ammo45ACPEnhanced           : - 
+    ammoBundle45ACPBulletBall   : ammoBundle9mmBulletBall
+    ammoBundle45ACPHighpower    : ammoBundle9mmBulletHP
+    ammoBundle45ACPArmorpiecing : ammoBundle9mmBulletAP
+    ammoBundle45ACPEnhanced     : - 
+    -->
+    <!-- add the "learnable" tag to ammo to make it NOT craftable by default -->
+    <csv xpath = "recipes/recipe[@name='ammo45ACPBulletBall']/@tags" op="Add">learnable</csv>
+    <csv xpath = "recipes/recipe[@name='ammo45ACPHighpower']/@tags" op="Add">learnable</csv>
+    <csv xpath = "recipes/recipe[@name='ammo45ACPArmorpiecing']/@tags" op="Add">learnable</csv>
+    <csv xpath = "recipes/recipe[@name='ammo45ACPEnhanced']/@tags" op="Add">learnable</csv>
+    
+</vinylplz>

@@ -1,0 +1,181 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_45ACP =======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 0 ==============================
+    IZYgunT0PistolLiberatorImprovisedPistol : gunHandgunT0PipePistol 
+    -->
+    <!-- These are always unlocked.  See also recipes.xml -->
+    <remove xpath ="items/item[@name='IZYgunT0PistolLiberatorImprovisedPistol']/property[@name='UnlockedBy']"/>
+
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT145TACSMGMAC10       : gunHandgunT1Pistol
+    IZYgunT1Pistol45M1917       : gunHandgunT1Pistol
+    IZYgunT1Pistol45Type17C96   : gunHandgunT1Pistol
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT145TACSMGMAC10']/property[@name='UnlockedBy']" name="value">gunHandgunT1PistolSchematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT1Pistol45M1917']/property[@name='UnlockedBy']" name="value">gunHandgunT1PistolSchematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT1Pistol45Type17C96']/property[@name='UnlockedBy']" name="value">gunHandgunT1PistolSchematic,perkPistolCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunHandgunT1PistolSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT145TACSMGMAC10" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1Pistol45M1917" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1Pistol45Type17C96" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT245SMGM3Greasegun        : gunHandgunT2Magnum44
+    IZYgunT2DualPistols45M1911A1    : gunHandgunT2Magnum44
+    IZYgunT2Pistol45M1911A1         : gunHandgunT2Magnum44
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT245SMGM3Greasegun']/property[@name='UnlockedBy']" name="value">gunHandgunT2Magnum44Schematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT2DualPistols45M1911A1']/property[@name='UnlockedBy']" name="value">gunHandgunT2Magnum44Schematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT2Pistol45M1911A1']/property[@name='UnlockedBy']" name="value">gunHandgunT2Magnum44Schematic,perkPistolCrafting</setattribute>
+ 
+     <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunHandgunT2Magnum44Schematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT245SMGM3Greasegun" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2DualPistols45M1911A1" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2Pistol45M1911A1" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT345SMGM1thompson             : gunHandgunT3SMG5
+    IZYgunT3DualPistols45USP45          : gunHandgunT3DesertVulture (Notready_ICON)
+    IZYgunT3MarksmanRifleMMRM1Carbine45 : gunRifleT3SniperRifle
+    IZYgunT3Pistol45USP45               : gunHandgunT3DesertVulture
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT345SMGM1thompson']/property[@name='UnlockedBy']" name="value">gunHandgunT3SMG5Schematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3DualPistols45USP45']/property[@name='UnlockedBy']" name="value">gunHandgunT3DesertVultureSchematic,perkPistolCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3MarksmanRifleMMRM1Carbine45']/property[@name='UnlockedBy']" name="value">gunRifleT3SniperRifleSchematic,perkRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3Pistol45USP45']/property[@name='UnlockedBy']" name="value">gunHandgunT3DesertVultureSchematic,perkPistolCrafting</setattribute>
+
+     <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunHandgunT3DesertVultureSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3DualPistols45USP45" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3Pistol45USP45" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='gunHandgunT3SMG5Schematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT345SMGM1thompson" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='gunRifleT3SniperRifleSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3MarksmanRifleMMRM1Carbine45" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT445SMGM1928thompson          : (smg)
+    IZYgunT445TACSMGKrissSuperV         : (smg)
+    IZYgunT4MarksmanRifle45MMRKrissVectorCarbine   : (rifle)
+    IZYgunT4Pistol45STIEAGLE6           : (pistol)
+    -->
+    <!-- Set the UnlockedBy attribute to Schematic only -->
+    <setattribute xpath="items/item[@name='IZYgunT445SMGM1928thompson']/property[@name='UnlockedBy']" name="value">IZYgunT445SMGM1928thompsonSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT445TACSMGKrissSuperV']/property[@name='UnlockedBy']" name="value">IZYgunT445TACSMGKrissSuperVSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4MarksmanRifle45MMRKrissVectorCarbine']/property[@name='UnlockedBy']" name="value">IZYgunT4MarksmanRifle45MMRKrissVectorCarbineSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4Pistol45STIEAGLE6']/property[@name='UnlockedBy']" name="value">IZYgunT4Pistol45STIEAGLE6Schematic</setattribute>
+
+        <!-- create new schematics -->
+    <append xpath="/items">	
+        <item name="IZYgunT445SMGM1928thompsonSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT445SMGM1928thompson"/>
+            <property name="Unlocks" value="IZYgunT445SMGM1928thompson"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT445SMGM1928thompson" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT445TACSMGKrissSuperVSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT445TACSMGKrissSuperV"/>
+            <property name="Unlocks" value="IZYgunT445TACSMGKrissSuperV"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT445TACSMGKrissSuperV" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4MarksmanRifle45MMRKrissVectorCarbineSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4MarksmanRifle45MMRKrissVectorCarbine"/>
+            <property name="Unlocks" value="IZYgunT4MarksmanRifle45MMRKrissVectorCarbine"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4MarksmanRifle45MMRKrissVectorCarbine" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4Pistol45STIEAGLE6Schematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4Pistol45STIEAGLE6"/>
+            <property name="Unlocks" value="IZYgunT4Pistol45STIEAGLE6"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4Pistol45STIEAGLE6" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+    
+    <!-- ================ Tier 5 ======================== 
+    IZYgunT5DualSMGsSuperVectors        : (Notready_ICON)
+    -->
+    <!-- Set the UnlockedBy attribute to Schematic only -->
+    <setattribute xpath="items/item[@name='IZYgunT5DualSMGsSuperVectors']/property[@name='UnlockedBy']" name="value">IZYgunT5DualSMGsSuperVectorsSchematic</setattribute>
+
+    <!-- create new schematic -->
+    <append xpath="/items">	
+        <item name="IZYgunT5DualSMGsSuperVectorsSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="Notready_ICON"/>
+            <property name="Unlocks" value="IZYgunT5DualSMGsSuperVectors"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT5DualSMGsSuperVectors" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+
+    <!-- ================ Ammo ========================== 
+    ammo45ACPBulletBall         : ammo9mmBulletBall
+    ammo45ACPHighpower          : ammo9mmBulletHP
+    ammo45ACPArmorpiecing       : ammo9mmBulletAP
+    ammo45ACPEnhanced           : - 
+    ammoBundle45ACPBulletBall   : ammoBundle9mmBulletBall
+    ammoBundle45ACPHighpower    : ammoBundle9mmBulletHP
+    ammoBundle45ACPArmorpiecing : ammoBundle9mmBulletAP
+    ammoBundle45ACPEnhanced     : - 
+    -->
+    <!--ammo45ACPBulletBall does not have an "UnlockedBy" property, so we must add one manually -->
+    <append xpath="items/item[@name='ammo45ACPBulletBall']">
+        <property name="UnlockedBy" value="ammo9mmBulletBallSchematic,perk9mmCrafting"/>
+    </append>
+    <!-- Set the UnlockedBy property for each ammo -->
+    <setattribute xpath="items/item[@name='ammo45ACPHighpower']/property[@name='UnlockedBy']" name="value">ammo9mmBulletHPSchematic,perk9mmCrafting</setattribute>
+    <setattribute xpath="items/item[@name='ammo45ACPArmorpiecing']/property[@name='UnlockedBy']" name="value">ammo9mmBulletAPSchematic,perk9mmCrafting</setattribute>
+    <setattribute xpath="items/item[@name='ammo45ACPEnhanced']/property[@name='UnlockedBy']" name="value">ammo9mmBulletAPSchematic,perk9mmCrafting</setattribute>
+    <!-- ammo bundles are only unlocked through crafting perks -->
+    <setattribute xpath="items/item[@name='ammoBundle45ACPBulletBall']/property[@name='UnlockedBy']" name="value">perk9mmCrafting</setattribute>
+    <setattribute xpath="items/item[@name='ammoBundle45ACPHighpower']/property[@name='UnlockedBy']" name="value">perk9mmCrafting</setattribute>
+    <setattribute xpath="items/item[@name='ammoBundle45ACPArmorpiecing']/property[@name='UnlockedBy']" name="value">perk9mmCrafting</setattribute>
+    <setattribute xpath="items/item[@name='ammoBundle45ACPEnhanced']/property[@name='UnlockedBy']" name="value">perk9mmCrafting</setattribute>
+    
+    <!-- Update the related vanilla Schematics to unlock the IZY ammo -->
+    <append xpath="/items/item[@name='ammo9mmBulletBallSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo45ACPBulletBall" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='ammo9mmBulletHPSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo45ACPHighpower" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='ammo9mmBulletAPSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo45ACPArmorpiecing" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo45ACPEnhanced" operation="set" value="1"/>
+    </append>
+
+</vinylplz>
