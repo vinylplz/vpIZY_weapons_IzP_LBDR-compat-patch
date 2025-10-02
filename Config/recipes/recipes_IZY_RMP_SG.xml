@@ -26,7 +26,8 @@
     ammoShotgunShellPremium         : ammoShotgunShell
     -->
     <!-- add the "learnable" tag to ammo to make it NOT craftable by default -->
-    <csv xpath = "recipes/recipe[@name='ammoShotgunShellDragoBreath']/@tags" op="Add">learnable</csv>
+    <!-- known bug: in IZY 5.1 AIO, there is no recipe for ammoShotgunShellDragoBreath 
+    <csv xpath = "recipes/recipe[@name='ammoShotgunShellDragoBreath']/@tags" op="Add">learnable</csv> -->
     <csv xpath = "recipes/recipe[@name='ammoShotgunShellPremium']/@tags" op="Add">learnable</csv>
 
 </vinylplz>
