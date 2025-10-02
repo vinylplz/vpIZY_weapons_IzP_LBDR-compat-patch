@@ -1,0 +1,24 @@
+<vinylplz>
+    <!-- ============== IZY_RMP_Miscpack ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 0 ==============================
+    IZYgunTminus1MusketFlintlockPistol      : gunHandgunT0PipePistol
+    IZYgunTminus1MusketM1777Rifle           : gunRifleT0PipeRifle
+    IZYgunTminus1MusketshotgunBlunderbuss   : gunShotgunT0PipeShotgun (Notready_ICON)
+    -->
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4BowVanhelsingAutomaticCrossbowVH : -
+    -->
+
+    <!-- ================ Ammo ========================== 
+    ammoCrossbowLightBoltIron       : ammoCrossbowBoltIron
+    ammoCrossbowLightBoltSteelAP    : ammoCrossbowBoltSteelAP
+    ammoCrossbowLightBoltStone      : ammoCrossbowBoltStone
+    ammoMuzzleloaderscattershot     : ammoShotgunShell
+    ammoMuzzleloadershot            : ammo9mmBulletBall
+    ammoleadball                    : -
+    -->
+
+</vinylplz>

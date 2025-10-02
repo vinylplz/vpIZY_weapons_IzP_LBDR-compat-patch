@@ -75,13 +75,13 @@
 
 		<conditional>
 		<if cond="mod_loaded('IZY_melee')">
-			<include filename="recipes_IZY_melee.xml"/>
+			<include filename="recipes/recipes_IZY_melee.xml"/>
 		</if>
 		</conditional>
 
 		<conditional>
 		<if cond="mod_loaded('IZY_VRP')">
-			<include filename="recipes_IZY_VRP.xml"/>
+			<include filename="recipes/recipes_IZY_VRP.xml"/>
 		</if>
 		</conditional>
 	</if>

@@ -1,0 +1,50 @@
+<vinylplz>
+    <!-- ============== IZY_RMP_Miscpack ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 0 ==============================
+    IZYgunTminus1MusketFlintlockPistol      : gunHandgunT0PipePistol
+    IZYgunTminus1MusketM1777Rifle           : gunRifleT0PipeRifle
+    IZYgunTminus1MusketshotgunBlunderbuss   : gunShotgunT0PipeShotgun (Notready_ICON)
+    -->
+    <!-- These come unlocked.  Nothing to do here. -->
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4BowVanhelsingAutomaticCrossbowVH : -
+    -->
+    <!-- Set the UnlockedBy attribute to Schematic only -->
+    <setattribute xpath="items/item[@name='IZYgunT4BowVanhelsingAutomaticCrossbowVH']/property[@name='UnlockedBy']" name="value">IZYgunT4BowVanhelsingAutomaticCrossbowVHSchematic</setattribute>
+    <!-- create new schematic -->
+    <append xpath="/items">
+        <item name="IZYgunT4BowVanhelsingAutomaticCrossbowVHSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4BowVanhelsingAutomaticCrossbowVH"/>
+            <property name="Unlocks" value="IZYgunT4BowVanhelsingAutomaticCrossbowVH"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4BowVanhelsingAutomaticCrossbowVH" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+
+
+    <!-- ================ Ammo ========================== 
+    ammoCrossbowLightBoltIron       : ammoCrossbowBoltIron
+    ammoCrossbowLightBoltSteelAP    : ammoCrossbowBoltSteelAP
+    ammoCrossbowLightBoltStone      : ammoCrossbowBoltStone
+    ammoMuzzleloaderscattershot     : ammoShotgunShell
+    ammoMuzzleloadershot            : ammo9mmBulletBall
+    ammoleadball                    : -
+    -->
+    
+    <!-- These ammo are already unlocked:   ammoCrossbowLightBoltIron, ammoCrossbowLightBoltStone           -->
+    <!-- These ammo have no recipe:         ammoleadball, ammoMuzzleloaderscattershot, ammoMuzzleloadershot -->
+
+    <!-- Set the UnlockedBy property for the IZY ammo items -->
+    <setattribute xpath="items/item[@name='ammoCrossbowLightBoltSteelAP']/property[@name='UnlockedBy']" name="value">perkArrowCrafting</setattribute>
+
+
+    
+
+</vinylplz>
