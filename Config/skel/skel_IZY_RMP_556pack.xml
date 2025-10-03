@@ -1,0 +1,43 @@
+<vinylplz>
+    <!-- =============== IZY_RMP_556pack ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 0 ==============================
+    IZYgunT0SNIPERpipeAR15Broken15Junk : gunRifleT0PipeRifle 
+    -->
+
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1ARCabineM608SurvivalRifle   : gunMGT1AK47
+    IZYgunT1ARCabineMASFARifle          : gunMGT1AK47 (Notready_ICON)
+    IZYgunT1LRLongRifleM16a1            : gunMGT1AK47 (Notready_ICON)
+    -->
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2ARCabineCAR15   : gunMGT2TacticalAR
+    IZYgunT2LMGLMG36        : gunMGT2TacticalAR
+    -->
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3ARCabineM4Carbine           : gunMGT3M60
+    IZYgunT3AREUCabineSG552             : gunMGT3M60 (Notready_ICON)
+    IZYgunT3BULLPUPHellionVHS2          : gunMGT3M60
+    IZYgunT3LMGM249FNminimi             : gunMGT3M60
+    IZYgunT3MarksManRifle556M16A2DMR    : gunRifleT3SniperRifle
+    -->
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4ARCabineHK416           : (gunMGT3M60)
+    IZYgunT4BULLPUPFNF2000          : (gunMGT3M60)
+    IZYgunT4MarksManRifle556SSMAR15 : (gunRifleT3SniperRifle) (Notready_ICON)
+    -->
+
+    <!-- ================ Ammo ========================== 
+    ammo556mmBulletBall             : ammo762mmBulletBall
+    ammo556mmHIpower                : ammo762mmBulletHP
+    ammo556mmArmorPiercing          : ammo762mmBulletAP
+    ammo556mmBulletBallBundle       : ammoBundle762mmBulletBall
+    ammo556mmHIpowerBundle          : ammoBundle762mmBulletHP
+    ammo556mmArmorPiercingBundle    : ammoBundle762mmBulletAP
+    -->
+
+</vinylplz>
