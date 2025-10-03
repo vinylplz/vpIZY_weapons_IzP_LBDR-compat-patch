@@ -5,7 +5,7 @@
 | IZY_RMP_Miscpack  | X | WeaponpackMisc_pack           | Muskets, "Light" crossbow bolts, IZYgunT4BowVanhelsingAutomaticCrossbowVH |
 | IZY_RMP_44magnum  | X | WeaponpackRemastered_44mag    | Magnums |
 | IZY_RMP_45ACP     | X | WeaponpackRemastered_45ACP    | 45 ammo, handguns, smgs, rifles.  handgun/smg use 9mm tags/perks |
-| IZY_RMP_556pack   |   | WeaponpackRemastered_556pack  | |
+| IZY_RMP_556pack   | X | WeaponpackRemastered_556pack  | 556 ammo, rifles, machine guns.  uses 762 tags/perks |
 | IZY_RMP_762pack   |   | WeaponpackRemastered_762pack  | |
 | IZY_RMP_9mmVAL    | X | WeaponpackRemastered_9mmVAL   | Handguns,SMGs |
 | IZY_RMP_Demopack  |   | WeaponpackRemastered_DemolitionPack   | |
