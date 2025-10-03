@@ -1,16 +1,16 @@
-| MOD_ID         | SUP? | FOLDER                                    | DESCRIPTION             |
-|-----------------|-----|-------------------------------------------|-------------------------|
-| IZY_FPV_GLOVES    | X | 7D1.0_Izayo_Visible_FPV_Gloves_mod        | makes gloves visible in first-person view |
-| IZY_MMVMV2        | X | 7D1.0_Izayo_Visible_Mods_mod              | buffs,kick,Notready_ICON,IZYadvancegunrepairkit |
-| IZY_RMP_Miscpack  | X | 7D1.0_Izayo_WeaponpackMisc_pack           | Muskets, "Light" crossbow bolts, IZYgunT4BowVanhelsingAutomaticCrossbowVH |
-| IZY_RMP_44magnum  | X | 7D1.0_Izayo_WeaponpackRemastered_44mag    | Magnums |
-| IZY_RMP_45ACP     | X | 7D1.0_Izayo_WeaponpackRemastered_45ACP    | 45 ammo, handguns, smgs, rifles.  handgun/smg use 9mm tags/perks |
-| IZY_RMP_556pack   |   | 7D1.0_Izayo_WeaponpackRemastered_556pack  | |
-| IZY_RMP_762pack   |   | 7D1.0_Izayo_WeaponpackRemastered_762pack  | |
-| IZY_RMP_9mmVAL    | X | 7D1.0_Izayo_WeaponpackRemastered_9mmVAL   | Handguns,SMGs |
-| IZY_RMP_Demopack  |   | 7D1.0_Izayo_WeaponpackRemastered_DemolitionPack   | |
-| IZY_RMP_HVW       |   | 7D1.0_Izayo_WeaponpackRemastered_Heavy_WeaponPack | |
-| IZY_RMP_SG        | X | 7D1.0_Izayo_WeaponpackRemastered_SHOTGUNpackVAL   | Shotguns |
-| IZY_RMP_Tech      |   | 7D1.0_Izayo_WeaponpackRemastered_Technicalpack    | |
-| IZY_melee         |   | 7D1.0_Izayo_WeaponpackSpecial_Melee       | |
-| IZY_VRP           | X | 7D1.0_Izayo_WeaponpackVanillaReplacer     | replaces T1-T3 shotguns, ARs, rifles, handgun/smgs |
+| MOD_ID         | SUP? | FOLDER (7D1.0_Izayo_ ...)     | DESCRIPTION             |
+|-----------------|-----|-------------------------------|-------------------------|
+| IZY_FPV_GLOVES    | X | Visible_FPV_Gloves_mod        | makes gloves visible in first-person view |
+| IZY_MMVMV2        | X | Visible_Mods_mod              | buffs,kick,Notready_ICON,IZYadvancegunrepairkit |
+| IZY_RMP_Miscpack  | X | WeaponpackMisc_pack           | Muskets, "Light" crossbow bolts, IZYgunT4BowVanhelsingAutomaticCrossbowVH |
+| IZY_RMP_44magnum  | X | WeaponpackRemastered_44mag    | Magnums |
+| IZY_RMP_45ACP     | X | WeaponpackRemastered_45ACP    | 45 ammo, handguns, smgs, rifles.  handgun/smg use 9mm tags/perks |
+| IZY_RMP_556pack   |   | WeaponpackRemastered_556pack  | |
+| IZY_RMP_762pack   |   | WeaponpackRemastered_762pack  | |
+| IZY_RMP_9mmVAL    | X | WeaponpackRemastered_9mmVAL   | Handguns,SMGs |
+| IZY_RMP_Demopack  |   | WeaponpackRemastered_DemolitionPack   | |
+| IZY_RMP_HVW       |   | WeaponpackRemastered_Heavy_WeaponPack | |
+| IZY_RMP_SG        | X | WeaponpackRemastered_SHOTGUNpackVAL   | Shotguns |
+| IZY_RMP_Tech      |   | WeaponpackRemastered_Technicalpack    | |
+| IZY_melee         |   | WeaponpackSpecial_Melee       | |
+| IZY_VRP           | X | WeaponpackVanillaReplacer     | replaces T1-T3 shotguns, ARs, rifles, handgun/smgs |
