@@ -1,0 +1,54 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_762pack =======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1BattleRifleBARbrowningautomaticrifle    : gunMGT1AK47
+    IZYgunT1SNIPERRIFLE762Mosinnagant       : gunRifleT1HuntingRifle
+    -->
+    <!-- The following line adds the BAR to any perks that gunMGT1AK47 (vanilla) is in, namely:		
+            * perkGunsmithCrafting: enables crafting higher quality guns
+            * perkAutoRifleCrafting: unlocks crafting ARs
+        The rest of the file follows the same pattern.
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunMGT1AK47')]/@tags" op="Add">IZYgunT1BattleRifleBARbrowningautomaticrifle</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunRifleT1HuntingRifle')]/@tags" op="Add">IZYgunT1SNIPERRIFLE762Mosinnagant</csv>
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2ARSTG44N                    : gunMGT2TacticalAR
+    IZYgunT2BattleRifleFNFALRifle       : gunMGT2TacticalAR
+    IZYgunT2LMGlightmachinegunRPD       : gunMGT2TacticalAR
+    IZYgunT2MarksManRifle762M1garandNavyconverted   : gunRifleT2LeverActionRifle
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunMGT2TacticalAR')]/@tags" op="Add">IZYgunT2ARSTG44N,IZYgunT2BattleRifleFNFALRifle,IZYgunT2LMGlightmachinegunRPD</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunRifleT2LeverActionRifle')]/@tags" op="Add">IZYgunT2MarksManRifle762M1garandNavyconverted</csv>
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3ARAKM                           : gunMGT3M60
+    IZYgunT3BattleRifleHKG3                 : gunMGT3M60
+    IZYgunT3MarksManRifle762HKPSG1          : gunRifleT3SniperRifle
+    IZYgunT3SNIPERRIFLE762LeeEnfieldRifle   : gunRifleT3SniperRifle
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunMGT3M60')]/@tags" op="Add">IZYgunT3ARAKM,IZYgunT3BattleRifleHKG3</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunRifleT3SniperRifle')]/@tags" op="Add">IZYgunT3MarksManRifle762HKPSG1,IZYgunT3SNIPERRIFLE762LeeEnfieldRifle</csv>
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4BattleRifleSCARH                : (gunMGT3M60)
+    IZYgunT4LMGlightmachinegunMG34R         : (gunMGT3M60)
+    IZYgunT4MarksManRifle762SVUprototypeRifle   : (gunRifleT3SniperRifle)
+    IZYgunT4MarksManRifleM110SASS           : (gunRifleT3SniperRifle)
+    IZYgunT4SNIPERRIFLE762L96AWMRifle       : (gunRifleT3SniperRifle)
+    -->
+    <!-- T4 weapons are only unlocked from Schematics, but still need to be added to perkGunsmithCrafting to enabled higher-quality crafting -->
+    <csv xpath="/progression/perks/perk[@name='perkGunsmithCrafting']/effect_group/passive_effect[@name='CraftingTier']/@tags" op="Add">IZYgunT4BattleRifleSCARH,IZYgunT4LMGlightmachinegunMG34R</csv>
+    <csv xpath="/progression/perks/perk[@name='perkGunsmithCrafting']/effect_group/passive_effect[@name='CraftingTier']/@tags" op="Add">IZYgunT4MarksManRifle762SVUprototypeRifle,IZYgunT4MarksManRifleM110SASS,IZYgunT4SNIPERRIFLE762L96AWMRifle</csv>
+
+    <!-- ================ Ammo ========================== 
+    ammo762mmExplosiveFragmentations        : unused
+    -->
+
+</vinylplz>
+
+
+
+

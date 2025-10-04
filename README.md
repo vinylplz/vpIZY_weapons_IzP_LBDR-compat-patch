@@ -27,7 +27,7 @@ The IZY AIO pack contains several mods in the zip file you download from Nexus. 
 | IZY_RMP_44magnum  | X | WeaponpackRemastered_44mag    | Magnums |
 | IZY_RMP_45ACP     | X | WeaponpackRemastered_45ACP    | 45 ammo, handguns, smgs, rifles.  handgun/smg use 9mm tags/perks |
 | IZY_RMP_556pack   | X | WeaponpackRemastered_556pack  | 556 ammo, rifles, machine guns.  uses 762 tags/perks |
-| IZY_RMP_762pack   |   | WeaponpackRemastered_762pack  | |
+| IZY_RMP_762pack   | X | WeaponpackRemastered_762pack  | sniper rifles, machine guns/ARs |
 | IZY_RMP_9mmVAL    | X | WeaponpackRemastered_9mmVAL   | Handguns,SMGs |
 | IZY_RMP_Demopack  |   | WeaponpackRemastered_DemolitionPack   | |
 | IZY_RMP_HVW       |   | WeaponpackRemastered_Heavy_WeaponPack | |

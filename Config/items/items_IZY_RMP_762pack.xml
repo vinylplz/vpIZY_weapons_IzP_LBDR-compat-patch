@@ -1,0 +1,141 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_762pack =======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1BattleRifleBARbrowningautomaticrifle    : gunMGT1AK47
+    IZYgunT1SNIPERRIFLE762Mosinnagant       : gunRifleT1HuntingRifle
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT1BattleRifleBARbrowningautomaticrifle']/property[@name='UnlockedBy']" name="value">gunMGT1AK47Schematic,perkAutoRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT1SNIPERRIFLE762Mosinnagant']/property[@name='UnlockedBy']" name="value">gunRifleT1HuntingRifleSchematic,perkRifleCrafting</setattribute>
+
+        <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunMGT1AK47Schematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1BattleRifleBARbrowningautomaticrifle" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='gunRifleT1HuntingRifleSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT1SNIPERRIFLE762Mosinnagant" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2ARSTG44N                    : gunMGT2TacticalAR
+    IZYgunT2BattleRifleFNFALRifle       : gunMGT2TacticalAR
+    IZYgunT2LMGlightmachinegunRPD       : gunMGT2TacticalAR
+    IZYgunT2MarksManRifle762M1garandNavyconverted   : gunRifleT2LeverActionRifle
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT2ARSTG44N']/property[@name='UnlockedBy']" name="value">gunMGT2TacticalARSchematic,perkAutoRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT2BattleRifleFNFALRifle']/property[@name='UnlockedBy']" name="value">gunMGT2TacticalARSchematic,perkAutoRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT2LMGlightmachinegunRPD']/property[@name='UnlockedBy']" name="value">gunMGT2TacticalARSchematic,perkAutoRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT2MarksManRifle762M1garandNavyconverted']/property[@name='UnlockedBy']" name="value">gunRifleT2LeverActionRifleSchematic,perkRifleCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunMGT2TacticalARSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2ARSTG44N" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2BattleRifleFNFALRifle" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2LMGlightmachinegunRPD" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='gunRifleT2LeverActionRifleSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2MarksManRifle762M1garandNavyconverted" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3ARAKM                           : gunMGT3M60
+    IZYgunT3BattleRifleHKG3                 : gunMGT3M60
+    IZYgunT3MarksManRifle762HKPSG1          : gunRifleT3SniperRifle
+    IZYgunT3SNIPERRIFLE762LeeEnfieldRifle   : gunRifleT3SniperRifle
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT3ARAKM']/property[@name='UnlockedBy']" name="value">gunMGT3M60Schematic,perkAutoRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3BattleRifleHKG3']/property[@name='UnlockedBy']" name="value">gunMGT3M60Schematic,perkAutoRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3MarksManRifle762HKPSG1']/property[@name='UnlockedBy']" name="value">gunRifleT3SniperRifleSchematic,perkRifleCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3SNIPERRIFLE762LeeEnfieldRifle']/property[@name='UnlockedBy']" name="value">gunRifleT3SniperRifleSchematic,perkRifleCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunMGT3M60Schematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3ARAKM" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3BattleRifleHKG3" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='gunRifleT3SniperRifleSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3MarksManRifle762HKPSG1" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3SNIPERRIFLE762LeeEnfieldRifle" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4BattleRifleSCARH                : (gunMGT3M60)
+    IZYgunT4LMGlightmachinegunMG34R         : (gunMGT3M60)
+    IZYgunT4MarksManRifle762SVUprototypeRifle   : (gunRifleT3SniperRifle)
+    IZYgunT4MarksManRifleM110SASS           : (gunRifleT3SniperRifle)
+    IZYgunT4SNIPERRIFLE762L96AWMRifle       : (gunRifleT3SniperRifle)
+    -->
+    <!-- Set the UnlockedBy attribute to Schematic only -->
+    <setattribute xpath="items/item[@name='IZYgunT4BattleRifleSCARH']/property[@name='UnlockedBy']" name="value">IZYgunT4BattleRifleSCARHSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4LMGlightmachinegunMG34R']/property[@name='UnlockedBy']" name="value">IZYgunT4LMGlightmachinegunMG34RSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4MarksManRifle762SVUprototypeRifle']/property[@name='UnlockedBy']" name="value">IZYgunT4MarksManRifle762SVUprototypeRifleSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4MarksManRifleM110SASS']/property[@name='UnlockedBy']" name="value">IZYgunT4MarksManRifleM110SASSSchematic</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT4SNIPERRIFLE762L96AWMRifle']/property[@name='UnlockedBy']" name="value">IZYgunT4SNIPERRIFLE762L96AWMRifleSchematic</setattribute>
+
+    <!-- Add new Schematics to unlock the Tier 4 IZY weapons -->
+    <append xpath="/items">
+        <item name="IZYgunT4BattleRifleSCARHSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4BattleRifleSCARH"/>
+            <property name="Unlocks" value="IZYgunT4BattleRifleSCARH"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4BattleRifleSCARH" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4LMGlightmachinegunMG34RSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4LMGlightmachinegunMG34R"/>
+            <property name="Unlocks" value="IZYgunT4LMGlightmachinegunMG34R"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4LMGlightmachinegunMG34R" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4MarksManRifle762SVUprototypeRifleSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4MarksManRifle762SVUprototypeRifle"/>
+            <property name="Unlocks" value="IZYgunT4MarksManRifle762SVUprototypeRifle"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4MarksManRifle762SVUprototypeRifle" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4MarksManRifleM110SASSSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4MarksManRifleM110SASS"/>
+            <property name="Unlocks" value="IZYgunT4MarksManRifleM110SASS"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4MarksManRifleM110SASS" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+        <item name="IZYgunT4SNIPERRIFLE762L96AWMRifleSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT4SNIPERRIFLE762L96AWMRifle"/>
+            <property name="Unlocks" value="IZYgunT4SNIPERRIFLE762L96AWMRifle"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT4SNIPERRIFLE762L96AWMRifle" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+
+    <!-- ================ Ammo ========================== 
+    ammo762mmExplosiveFragmentations        : unused
+    -->
+
+</vinylplz>
+
+
+
+

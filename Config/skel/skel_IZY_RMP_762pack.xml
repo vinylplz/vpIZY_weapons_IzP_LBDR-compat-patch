@@ -1,0 +1,44 @@
+<vinylplz>
+    <!-- ================ IZY_RMP_762pack =======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+    
+    <!-- ================ Tier 1 =========================== 
+    IZYgunT1BattleRifleBARbrowningautomaticrifle    : gunMGT1AK47
+    IZYgunT1SNIPERRIFLE762Mosinnagant       : gunRifleT1HuntingRifle
+    -->
+
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2ARSTG44N                    : gunMGT2TacticalAR
+    IZYgunT2BattleRifleFNFALRifle       : gunMGT2TacticalAR
+    IZYgunT2LMGlightmachinegunRPD       : gunMGT2TacticalAR
+    IZYgunT2MarksManRifle762M1garandNavyconverted   : gunRifleT2LeverActionRifle
+    -->
+
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3ARAKM                           : gunMGT3M60
+    IZYgunT3BattleRifleHKG3                 : gunMGT3M60
+    IZYgunT3MarksManRifle762HKPSG1          : gunRifleT3SniperRifle
+    IZYgunT3SNIPERRIFLE762LeeEnfieldRifle   : gunRifleT3SniperRifle
+    -->
+
+
+    <!-- ================ Tier 4 ======================== 
+    IZYgunT4BattleRifleSCARH                : (gunMGT3M60)
+    IZYgunT4LMGlightmachinegunMG34R         : (gunMGT3M60)
+    IZYgunT4MarksManRifle762SVUprototypeRifle   : (gunRifleT3SniperRifle)
+    IZYgunT4MarksManRifleM110SASS           : (gunRifleT3SniperRifle)
+    IZYgunT4SNIPERRIFLE762L96AWMRifle       : (gunRifleT3SniperRifle)
+    -->
+
+
+    <!-- ================ Ammo ========================== 
+    ammo762mmExplosiveFragmentations        : unused
+    -->
+
+</vinylplz>
+
+
+
+
