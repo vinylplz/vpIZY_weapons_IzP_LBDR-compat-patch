@@ -1,0 +1,33 @@
+<vinylplz>
+    <!-- =============== IZY_RMP_Demopack ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2LGLChinalakeGrenadeLauncher : (thrownGrenade)
+    -->
+    <!-- The following line adds the IZYgunT2LGLChinalakeGrenadeLauncher to any perks that thrownGrenade (vanilla) is in, namely:		
+            * perkExplosivesCrafting: unlocks crafting explosives
+        The rest of the file follows the same pattern.
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'thrownGrenade')]/@tags" op="Add">IZYgunT2LGLChinalakeGrenadeLauncher</csv>
+    <!-- Since thrownGrenade is not a gun type, we need to add it to the GunsmithCrafting perk as well -->
+    <csv xpath="/progression/perks/perk[@name='perkGunsmithCrafting']/effect_group/passive_effect[@name='CraftingTier']/@tags" op="Add">IZYgunT2LGLChinalakeGrenadeLauncher</csv>
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3LGLXM25             : gunExplosivesT3RocketLauncher
+    IZYgunT3RocketLauncherRPG7  : gunExplosivesT3RocketLauncher
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'gunExplosivesT3RocketLauncher')]/@tags" op="Add">IZYgunT3LGLXM25,IZYgunT3RocketLauncherRPG7</csv>
+
+    <!-- ================ Ammo ========================== 
+    ammo25mmGrenadeTraining     : (thrownGrenade)
+    ammo25mmGrenadeHE           : ammoRocketHE
+    ammo25mmGrenadeFRAGS        : ammoRocketFrag
+    ammoRocketRPGTraning       : (ammoRocketHE)
+    ammoRocketRPGHE            : ammoRocketHE
+    ammoRocketRPGIncendiary    : ammoRocketFrag
+    -->
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'thrownGrenade')]/@tags" op="Add">ammo25mmGrenadeTraining,ammo25mmGrenadeHE,ammo25mmGrenadeFRAGS,</csv>
+    <csv xpath="/progression/perks/perk/effect_group/passive_effect[contains(@tags,'ammoRocketHE')]/@tags" op="Add">ammoRocketRPGTraning,ammoRocketRPGHE,ammoRocketRPGIncendiary</csv>
+
+</vinylplz>

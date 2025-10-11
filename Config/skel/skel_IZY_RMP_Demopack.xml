@@ -1,0 +1,23 @@
+<vinylplz>
+    <!-- =============== IZY_RMP_Demopack ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2LGLChinalakeGrenadeLauncher : (thrownGrenade)
+    -->
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3LGLXM25             : gunExplosivesT3RocketLauncher
+    IZYgunT3RocketLauncherRPG7  : gunExplosivesT3RocketLauncher
+    -->
+
+    <!-- ================ Ammo ========================== 
+    ammo25mmGrenadeTraining     : (thrownGrenade)
+    ammo25mmGrenadeHE           : ammoRocketHE
+    ammo25mmGrenadeFRAGS        : ammoRocketFrag
+    ammoRocketRPGTraning       : (ammoRocketHE)
+    ammoRocketRPGHE            : ammoRocketHE
+    ammoRocketRPGIncendiary    : ammoRocketFrag
+    -->
+
+</vinylplz>

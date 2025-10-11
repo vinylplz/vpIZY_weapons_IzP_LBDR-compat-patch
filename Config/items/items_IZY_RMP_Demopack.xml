@@ -1,0 +1,78 @@
+<vinylplz>
+    <!-- =============== IZY_RMP_Demopack ======================
+    IZY WEAPON							: VANILLA WEAPON    -->
+
+    <!-- ================ Tier 2 ============================= 
+    IZYgunT2LGLChinalakeGrenadeLauncher : (thrownGrenade)
+    -->
+    <!-- Set the UnlockedBy attribute -->
+    <setattribute xpath="items/item[@name='IZYgunT2LGLChinalakeGrenadeLauncher']/property[@name='UnlockedBy']" name="value">IZYgunT2LGLChinalakeGrenadeLauncherSchematic,perkExplosivesCrafting</setattribute>
+
+    <!-- Create new schematic since no T2 explosive weapons exist in vanilla -->
+    <append xpath="/items">
+        <item name="IZYgunT2LGLChinalakeGrenadeLauncherSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
+            <property name="Unlocks" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT2LGLChinalakeGrenadeLauncher" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+
+    <!-- ================ Tier 3 ========================= 
+    IZYgunT3LGLXM25             : gunExplosivesT3RocketLauncher
+    IZYgunT3RocketLauncherRPG7  : gunExplosivesT3RocketLauncher
+    -->
+    <!-- Set the UnlockedBy attribute for each weapon -->
+    <setattribute xpath="items/item[@name='IZYgunT3LGLXM25']/property[@name='UnlockedBy']" name="value">gunExplosivesT3RocketLauncherSchematic,perkExplosivesCrafting</setattribute>
+    <setattribute xpath="items/item[@name='IZYgunT3RocketLauncherRPG7']/property[@name='UnlockedBy']" name="value">gunExplosivesT3RocketLauncherSchematic,perkExplosivesCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY weapons -->
+    <append xpath="/items/item[@name='gunExplosivesT3RocketLauncherSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3LGLXM25" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="IZYgunT3RocketLauncherRPG7" operation="set" value="1"/>
+    </append>
+
+    <!-- ================ Ammo ========================== 
+    ammo25mmGrenadeTraining     : (thrownGrenade)
+    ammo25mmGrenadeHE           : ammoRocketHE
+    ammo25mmGrenadeFRAGS        : ammoRocketFrag
+    ammoRocketRPGTraning       : (ammoRocketHE)
+    ammoRocketRPGHE            : ammoRocketHE    (ammoRocketSchematic)
+    ammoRocketRPGIncendiary    : ammoRocketFrag  (ammoRocketSchematic)
+    -->
+    <!-- ammo25Grenades don't have an UnlockedBy attribute, so we must create one -->
+    <append xpath="items/item[@name='ammo25mmGrenadeTraining']">
+        <property name="UnlockedBy" value="thrownGrenadeSchematic,perkExplosivesCrafting"/>
+    </append>
+    <append xpath="items/item[@name='ammo25mmGrenadeHE']">
+        <property name="UnlockedBy" value="ammoRocketSchematic,perkExplosivesCrafting"/>
+    </append>
+    <append xpath="items/item[@name='ammo25mmGrenadeFRAGS']">
+        <property name="UnlockedBy" value="ammoRocketSchematic,perkExplosivesCrafting"/>
+    </append>
+
+    <!-- Rockets do have UnlockedBy, so we can just update it -->
+    <setattribute xpath="items/item[@name='ammoRocketRPGTraning']/property[@name='UnlockedBy']" name="value">thrownGrenadeSchematic,perkExplosivesCrafting</setattribute>
+    <setattribute xpath="items/item[@name='ammoRocketRPGHE']/property[@name='UnlockedBy']" name="value">ammoRocketSchematic,perkExplosivesCrafting</setattribute>
+    <setattribute xpath="items/item[@name='ammoRocketRPGIncendiary']/property[@name='UnlockedBy']" name="value">ammoRocketSchematic,perkExplosivesCrafting</setattribute>
+
+    <!-- Update the related vanilla Schematics to unlock the IZY ammo -->
+    <append xpath="/items/item[@name='thrownGrenadeSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo25mmGrenadeTraining" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoRocketRPGTraning" operation="set" value="1"/>
+    </append>
+    <append xpath="/items/item[@name='ammoRocketSchematic']/effect_group">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo25mmGrenadeHE" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoRocketRPGHE" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo25mmGrenadeFRAGS" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoRocketRPGIncendiary" operation="set" value="1"/>
+    </append>
+
+    <!-- Fix bug in LBDR ammoRocketSchematic (still shows unlocked after being read) -->
+    <setattribute xpath="/items/item[@name='ammoRocketSchematic']/property[@name='Unlocks']" name="value">ammoRocketFrag</setattribute>
+
+</vinylplz>

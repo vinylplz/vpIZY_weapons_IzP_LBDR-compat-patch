@@ -29,7 +29,7 @@ The IZY AIO pack contains several mods in the zip file you download from Nexus. 
 | IZY_RMP_556pack   | X | WeaponpackRemastered_556pack  | 556 ammo, rifles, machine guns.  uses 762 tags/perks |
 | IZY_RMP_762pack   | X | WeaponpackRemastered_762pack  | sniper rifles, machine guns/ARs |
 | IZY_RMP_9mmVAL    | X | WeaponpackRemastered_9mmVAL   | Handguns,SMGs |
-| IZY_RMP_Demopack  |   | WeaponpackRemastered_DemolitionPack   | |
+| IZY_RMP_Demopack  | X | WeaponpackRemastered_DemolitionPack   | Grenade and Rocket Launchers |
 | IZY_RMP_HVW       |   | WeaponpackRemastered_Heavy_WeaponPack | |
 | IZY_RMP_SG        | X | WeaponpackRemastered_SHOTGUNpackVAL   | Shotguns |
 | IZY_RMP_Tech      |   | WeaponpackRemastered_Technicalpack    | |
